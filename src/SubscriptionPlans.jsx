@@ -19,8 +19,8 @@ export default function SubscriptionPlans() {
   ]
   return <section id="plans" className="nv-dark nv-plans" aria-label={zh ? '订阅方案' : 'Subscription plans'}>
     <div className="nv-plans-intro">
-      <MotionTitle>{zh ? '为每次远航，选择合适的方案。' : 'The right plan for every voyage.'}</MotionTitle>
-      <p>{zh ? '从单航次到长期船队协作，按你的运营需求沟通服务范围。' : 'From single voyages to ongoing fleet collaboration, explore the scope that fits your operations.'}</p>
+      <MotionTitle>{zh ? <>为每次远航，<br/><em>选择适合的方案。</em></> : <>The right plan<br/><em>for every voyage.</em></>}</MotionTitle>
+      <p>{zh ? <>从单航次到长期船队协作，<br/>按你的运营需求沟通服务范围。</> : <>From single voyages to ongoing fleet collaboration,<br/>explore the scope that fits your operations.</>}</p>
     </div>
     <div className="nv-plans-grid">{plans.map(([code, name, description, term, features, price, action], index) =>
       <PixelCard as="article" className={`nv-plan ${index === 1 ? 'nv-plan-featured' : ''}`} key={code}

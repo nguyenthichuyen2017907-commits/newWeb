@@ -1,7 +1,7 @@
 .nv-plans { background: #10151f; color: #f5f3ee; }
-.nv-plans-intro { text-align: center; max-width: 980px; margin: 0 auto 64px; }
-.nv-plans .nv-plans-intro h2 { font-size: clamp(32px, 3.7vw, 56px); line-height: 1.25; margin: 0 0 22px; text-wrap: balance; }
-.nv-plans-intro > p { color: #bdc8da; font-size: 16px; line-height: 1.8; margin: 0 auto; max-width: 720px; }
+.nv-plans-intro { display: flex; justify-content: space-between; align-items: flex-end; gap: 48px; text-align: left; margin: 0 0 64px; }
+.nv-plans .nv-plans-intro h2 { margin: 0; }
+.nv-plans-intro > p { flex: 0 1 auto; color: #bdc8da; font: 12px/1.8 var(--mono); margin: 0; max-width: 320px; }
 .nv-plans-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; align-items: stretch; }
 .nv-plan { position: relative; display: flex; flex-direction: column; min-width: 0; padding: 34px 24px 24px; border: 1px solid #344052; border-radius: 16px; background: #151c29; }
 .nv-plan-featured { background: #19263c; border-color: #6897f7; }
@@ -46,6 +46,10 @@
 @media (max-width: 1100px) {
   .nv-plans-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 20px; }
   .nv-plan-description { min-height: 52px; }
+}
+@media (max-width: 800px) {
+  .nv-plans-intro { flex-direction: column; align-items: flex-start; gap: 25px; }
+  .nv-plans-intro > p { flex-basis: auto; }
 }
 @media (max-width: 600px) {
   .nv-plans-grid { grid-template-columns: 1fr; gap: 30px; }

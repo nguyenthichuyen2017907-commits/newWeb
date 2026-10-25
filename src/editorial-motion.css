@@ -1,0 +1,21 @@
+.nv-motion-word { display: inline-block; transform-origin: 50% 90%; }
+.nv-motion-title { overflow: visible; }
+.nv-manifesto h2 > span, .nv-manifesto h2 .nv-motion-word { color: inherit; }
+.nv-opening { position: absolute; inset: 0; z-index: 4; pointer-events: none; display: flex; }
+.nv-opening-shutter { width: 50%; height: 100%; background: #111216; transform-origin: top; visibility: hidden; }
+.nv-opening-shutter:last-child { transform-origin: bottom; }
+.nv-wide-photo img { scale: 1.12; }
+.nv-booking .nv-crane-image {
+  box-shadow: 0 24px 44px -20px rgb(14 28 48 / 24%), 0 7px 18px -9px rgb(14 28 48 / 14%);
+}
+.nv-mode-tabs button { transition: background-color .45s ease, color .45s ease, border-color .45s ease; }
+.nv-crew-grid img { transition: filter .65s ease; }
+@media (hover: hover) and (pointer: fine) {
+  .nv-crew-grid article:hover img { filter: grayscale(.15) contrast(1.1); }
+}
+@media (max-width: 800px), (prefers-reduced-motion: reduce) {
+  .nv-wide-photo img { scale: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nv-opening { display: none; }
+}

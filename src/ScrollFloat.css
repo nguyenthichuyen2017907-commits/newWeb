@@ -1,0 +1,23 @@
+.nf-scroll-float .nf-float-content,
+.nf-scroll-float .nf-float-slot,
+.nf-scroll-float .nf-float-char { color: inherit; }
+.nf-scroll-float .nf-float-accent { color: #76aaff; }
+.nf-float-slot {
+  display: inline-block;
+  overflow: visible;
+  vertical-align: bottom;
+  padding-block: .1em;
+  margin-block: -.1em;
+}
+.nf-float-char {
+  display: inline-block;
+  transform-origin: 50% 0%;
+}
+/* Opacity handles the entrance; allow stretched glyphs past their line box. */
+.nf-site .nf-hero h1 > span { overflow: visible; }
+@media (prefers-reduced-motion: no-preference) {
+  .nf-float-char { opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nf-float-char { transform: none !important; opacity: 1 !important; }
+}

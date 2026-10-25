@@ -1,0 +1,20 @@
+/* Motion is opt-in; content stays readable if JavaScript or WebGL is unavailable. */
+.opening-curtain { display: none; }
+.motion-active .opening-curtain {
+  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  background: #0c0713;
+  transform-origin: center top;
+  pointer-events: none;
+}
+.ap-copy h1 > span { overflow: clip; padding-block: .06em; margin-block: -.06em; }
+.hero-line { display: block; }
+/* Replace old independent CSS entrances with one authored timeline. */
+.ap-copy h1 > span, .ap-copy > p, .ap-cta,
+.ap-navigation-layer .ap-nav { animation: none; }
+.page-sections > section { overflow: clip; }
+@media (prefers-reduced-motion: reduce) {
+  .opening-curtain { display: none !important; }
+}

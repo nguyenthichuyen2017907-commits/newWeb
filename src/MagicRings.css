@@ -1,0 +1,35 @@
+.magic-rings {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.magic-rings__canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.nf-site .nf-manifesto { isolation: isolate; }
+.nf-manifesto-rings {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(transparent, #000 18%, #000 82%, transparent);
+  mask-image: linear-gradient(transparent, #000 18%, #000 82%, transparent);
+}
+.nf-manifesto-rings::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 33% 55% at center, #04091199, transparent);
+}
+@media (max-width: 480px) {
+  .nf-manifesto-rings { inset-inline: -90px; opacity: .7; }
+}

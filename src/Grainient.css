@@ -1,0 +1,77 @@
+.grainient-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.grainient-canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* A single viewport-sized canvas follows only the post-hero region. */
+.nf-after-home { position: relative; isolation: isolate; display: flow-root; }
+.nf-grain-layer {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  mask-image: linear-gradient(transparent, #000 240px, #000 calc(100% - 160px), transparent);
+  -webkit-mask-image: linear-gradient(transparent, #000 240px, #000 calc(100% - 160px), transparent);
+}
+.nf-grain-viewport {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100svh;
+  background: linear-gradient(68deg, #040911, #061329 48%, #012b70);
+}
+.nf-grain-viewport::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(4, 9, 17, .18);
+}
+
+.nf-site .nf-principles { max-width: 1120px; gap: 20px; }
+.nf-principle-card {
+  position: relative;
+  isolation: isolate;
+  min-width: 0;
+  padding: 30px 28px;
+  border-radius: 14px;
+  background: #081321;
+}
+.nf-principle-border {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -2;
+  background: linear-gradient(68deg, #142e54, #0668ff, #83b9ff);
+}
+.nf-principle-card::before {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  border-radius: 13px;
+  background: #081321;
+  z-index: -1;
+  pointer-events: none;
+}
+.nf-principle-copy { position: relative; }
+.nf-principle-card .nf-principle-copy svg { color: #83b9ff; }
+@media (max-width: 800px) {
+  .nf-principle-card { padding: 24px 18px; }
+  .nf-principle-copy br { display: none; }
+}
+@media (max-width: 480px) {
+  .nf-site .nf-principles { gap: 14px; }
+  .nf-principle-copy { display: grid; grid-template-columns: 30px 1fr; column-gap: 12px; }
+  .nf-principle-copy svg { grid-row: span 2; margin-top: 3px; }
+}

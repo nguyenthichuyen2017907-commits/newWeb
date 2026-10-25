@@ -1,0 +1,482 @@
+{
+  "NAME PLACEHOLDER": {
+    "en": "Please enter your name",
+    "zh": "请填写您的姓名"
+  },
+  "320": {
+    "en": "5+",
+    "zh": "5+"
+  },
+  "NORVIK": {
+    "en": "NAVFULL",
+    "zh": "Navfull"
+  },
+  "ABOUT US": {
+    "en": "Home",
+    "zh": "首页"
+  },
+  "OUR CARGO": {
+    "en": "CAPABILITIES",
+    "zh": "核心能力"
+  },
+  "THE CREW": {
+    "en": "ROLES & SCENARIOS",
+    "zh": "角色场景"
+  },
+  "CONTACT": {
+    "en": "CONTACT",
+    "zh": "合作咨询"
+  },
+  "GET A FREIGHT QUOTE": {
+    "en": "BOOK A DEMO",
+    "zh": "预约产品演示"
+  },
+  "Main navigation": {
+    "en": "Main navigation",
+    "zh": "主导航"
+  },
+  "Toggle menu": {
+    "en": "Toggle menu",
+    "zh": "展开或收起菜单"
+  },
+  "NORVIK / FREIGHT SYSTEMS": {
+    "en": "NAVFULL / WEATHER ROUTING",
+    "zh": "NAVFULL / 船舶气象导航"
+  },
+  "FREIGHT": {
+    "en": "WEATHER",
+    "zh": "感知海况"
+  },
+  "THAT KEEPS": {
+    "en": "INFORMED",
+    "zh": "规划航线"
+  },
+  "THE WORLD": {
+    "en": "NAVIGATION",
+    "zh": "从容远航"
+  },
+  "OCEAN, ROAD, RAIL AND AIR — ONE CONNECTED WAY TO MOVE WHAT MATTERS.": {
+    "en": "WEATHER, VESSEL PERFORMANCE AND ROUTE RISK — ONE CONNECTED VIEW FOR EVERY PASSAGE.",
+    "zh": "融合全球气象、船舶性能与航路风险，让每一次远洋决策更有依据。"
+  },
+  "99.2%": {
+    "en": "WIND",
+    "zh": "风浪"
+  },
+  "ON-TIME ARRIVAL": {
+    "en": "METOCEAN FORECASTS",
+    "zh": "全球气象与海况"
+  },
+  "2.1M": {
+    "en": "ROUTE",
+    "zh": "航线"
+  },
+  "TONNES MOVED": {
+    "en": "MULTI-OBJECTIVE ROUTING",
+    "zh": "多目标航线优化"
+  },
+  "06 MIN": {
+    "en": "FLEET",
+    "zh": "船队"
+  },
+  "RESPONSE TIME": {
+    "en": "SHIP–SHORE SYNC",
+    "zh": "船岸协同决策"
+  },
+  "SCROLL TO MOVE": {
+    "en": "EXPLORE THE PLATFORM",
+    "zh": "探索平台能力"
+  },
+  "01 / OUR PROMISE": {
+    "en": "01 / OUR PHILOSOPHY",
+    "zh": "01 / 我们的理念"
+  },
+  "WE STARTED WITH THREE TRUCKS, AND ONE PROMISE: ": {
+    "en": "EVERY VESSEL RESPONDS TO THE SEA DIFFERENTLY. ",
+    "zh": "每艘船，都有自己的航行方式。"
+  },
+  "EVERY LOAD ARRIVES WHEN WE SAY IT WILL.": {
+    "en": "WE PLAN FOR YOUR VESSEL, NOT JUST THE WEATHER.",
+    "zh": "不只看天气，更懂你的船。"
+  },
+  "SEVENTY YEARS ON, THAT PROMISE COVERS 180 PORTS.": {
+    "en": "CONNECT FORECASTS, HYDRODYNAMICS AND HUMAN JUDGMENT IN EVERY ROUTING DECISION.",
+    "zh": "融合气象预报、水动力模型与人工判断，让航线决策有据可依。"
+  },
+  "PEOPLE, PROCESS, PRECISION.": {
+    "en": "WEATHER. VESSEL. ROUTE.",
+    "zh": "气象、船舶、航路。"
+  },
+  "THAT'S HOW WE KEEP THINGS MOVING.": {
+    "en": "ONE SHARED PICTURE FOR SHIP AND SHORE.",
+    "zh": "在同一张海图上，形成共同判断。"
+  },
+  "START A CONVERSATION": {
+    "en": "DISCUSS YOUR VOYAGE",
+    "zh": "沟通航次需求"
+  },
+  "02 / THE WAY WE MOVE": {
+    "en": "02 / INTELLIGENT ROUTE PLANNING",
+    "zh": "02 / 智能航线规划"
+  },
+  "ONE ": {
+    "en": "ONE ",
+    "zh": "同一片海，"
+  },
+  "BOOKING.": {
+    "en": "PASSAGE.",
+    "zh": "多种航行决策。"
+  },
+  "EVERY MODE.": {
+    "en": "YOUR PRIORITIES.",
+    "zh": "综合权衡，"
+  },
+  "ANY PORT.": {
+    "en": "A BETTER ROUTE.",
+    "zh": "择优而行。"
+  },
+  "WHETHER IT'S A SINGLE CONTAINER OR A GLOBAL SUPPLY CHAIN, WE BUILD THE ROUTE AROUND WHAT YOUR CARGO NEEDS.": {
+    "en": "BALANCE FUEL CONSUMPTION, ARRIVAL TIME AND WEATHER RISK WITH ROUTING THAT ACCOUNTS FOR YOUR VESSEL'S PERFORMANCE.",
+    "zh": "结合船舶性能与沿途海况，在燃油消耗、到港时间和气象风险之间寻找更合适的航行方案。"
+  },
+  "LANE / SHANGHAI → ROTTERDAM": {
+    "en": "EXAMPLE PASSAGE / SHANGHAI → ROTTERDAM",
+    "zh": "示例航次 / 上海 → 鹿特丹"
+  },
+  "EVERY HANDOFF, ACCOUNTED FOR.": {
+    "en": "COMPARE ROUTES BEFORE DEPARTURE.",
+    "zh": "开航前，对比不同航线策略。"
+  },
+  "ETD 24.06.26 &nbsp; · &nbsp; ETA 18.07.26": {
+    "en": "ILLUSTRATION ONLY · NOT LIVE NAVIGATION DATA",
+    "zh": "概念示意 · 非实时航行数据"
+  },
+  "EXPLORE THE NETWORK": {
+    "en": "PLAN A TRIAL VOYAGE",
+    "zh": "申请测试航次"
+  },
+  "Container vessel at sea": {
+    "en": "Cargo vessel with conceptual weather and route overlays",
+    "zh": "融合气象云层与航线示意的远洋货轮"
+  },
+  "PORTS WE KNOW ": {
+    "en": "ROUTING INPUTS ",
+    "zh": "航线决策依据"
+  },
+  "ROTTERDAM": {
+    "en": "WIND",
+    "zh": "风场"
+  },
+  "SHANGHAI": {
+    "en": "WAVES",
+    "zh": "海浪"
+  },
+  "SINGAPORE": {
+    "en": "CURRENTS",
+    "zh": "海流"
+  },
+  "LONG BEACH": {
+    "en": "DRAFT",
+    "zh": "吃水"
+  },
+  "DUBAI": {
+    "en": "ETA",
+    "zh": "到港时间"
+  },
+  "03 / HOW WE WORK": {
+    "en": "03 / OUR CORE CAPABILITIES",
+    "zh": "03 / 我们的核心能力"
+  },
+  "FOUR RULES": {
+    "en": "FOUR LAYERS",
+    "zh": "四大能力，"
+  },
+  "WE SHIP BY.": {
+    "en": "ONE CLEAR VIEW.",
+    "zh": "掌握全程。"
+  },
+  "NO SHORTCUTS. NO SURPRISES.": {
+    "en": "FROM VESSEL POSITION TO ROUTE RISK.",
+    "zh": "从船舶定位到航路风险。"
+  },
+  "JUST A CLEARER WAY TO GET THERE.": {
+    "en": "TURN COMPLEX DATA INTO DECISIONS.",
+    "zh": "将复杂数据转化为航行依据。"
+  },
+  "Ocean freight route": {
+    "en": "Conceptual ocean weather and navigation chart",
+    "zh": "海洋气象与航路概念图"
+  },
+  "3×": {
+    "en": "AIS",
+    "zh": "AIS"
+  },
+  "MORE VISIBILITY": {
+    "en": "VESSEL POSITIONS",
+    "zh": "船舶位置"
+  },
+  "15 MIN": {
+    "en": "ETA",
+    "zh": "ETA"
+  },
+  "AVERAGE RESPONSE": {
+    "en": "ARRIVAL ESTIMATES",
+    "zh": "到港时间预估"
+  },
+  "ON SCHEDULE": {
+    "en": "VESSEL TRACKING",
+    "zh": "船舶位置"
+  },
+  "EVERY MILE ACCOUNTED FOR.": {
+    "en": "POSITION, SPEED AND VOYAGE HISTORY.",
+    "zh": "掌握船位、航速与历史航迹。"
+  },
+  "IN THE OPEN": {
+    "en": "WEATHER LAYERS",
+    "zh": "气象感知"
+  },
+  "NO HIDDEN HANDOFFS.": {
+    "en": "WIND, WAVES, SWELL AND CURRENTS.",
+    "zh": "融合风、浪、涌浪与海流预报。"
+  },
+  "SHORTEST PATH": {
+    "en": "ROUTE OPTIMIZATION",
+    "zh": "航线优化"
+  },
+  "SMARTER ROUTES, LOWER COST.": {
+    "en": "BALANCE FUEL, TIME AND SAFETY.",
+    "zh": "综合权衡油耗、时间与安全。"
+  },
+  "ONE PLANNER": {
+    "en": "RISK ASSESSMENT",
+    "zh": "风险评估"
+  },
+  "ONE PERSON TO CALL.": {
+    "en": "FLAG HEAVY WEATHER ALONG THE ROUTE.",
+    "zh": "识别前方恶劣海况与航行风险。"
+  },
+  "04 / BUILT FOR CARGO": {
+    "en": "04 / RETHINKING ROUTE STRATEGIES",
+    "zh": "04 / 航线策略的思考"
+  },
+  "BUILT FOR CARGO": {
+    "en": "EVERY PASSAGE",
+    "zh": "每次出发，"
+  },
+  "THAT ": {
+    "en": "HAS ",
+    "zh": "都有"
+  },
+  "CAN'T WAIT.": {
+    "en": "A PRIORITY.",
+    "zh": "不同考量。"
+  },
+  "PRESSURELESS PRODUCTION PARTNERS. LONG-HAUL RETAIL. WHEN THE STAKES ARE HIGH, WE STAY CLOSE.": {
+    "en": "CHOOSE YOUR OBJECTIVE. REVIEW THE WEATHER, VESSEL RESPONSE AND ROUTE TRADE-OFFS BEFORE CONFIRMING YOUR PLAN.",
+    "zh": "根据航次目标选择策略，对比气象影响、船舶响应与航线代价，再由船长或岸基人员确认。"
+  },
+  "TIME-CRITICAL LANES": {
+    "en": "MINIMUM FUEL",
+    "zh": "最省油航线"
+  },
+  "When the schedule matters, every move is visible.": {
+    "en": "Estimate fuel consumption using weather, currents and vessel performance.",
+    "zh": "结合气象、海流与船舶性能，评估航路油耗，寻找更经济的航行方案。"
+  },
+  "COLD CHAIN, START TO FINISH": {
+    "en": "FIXED ETA",
+    "zh": "固定到港时间"
+  },
+  "Temperature-sensitive cargo, tracked across every handoff.": {
+    "en": "Balance speed and route choices against the planned arrival window.",
+    "zh": "以预计到港时间为约束，协调航速与航线，让航行计划更可控。"
+  },
+  "A DASHBOARD LIKE YOUR CFO": {
+    "en": "MINIMUM RISK",
+    "zh": "风险优先航线"
+  },
+  "One live view for cost, carbon, capacity and confidence.": {
+    "en": "Assess heavy weather and vessel-motion risks to inform alternative routes.",
+    "zh": "评估强风、巨浪与船舶运动风险，提前考虑备选绕航路线。"
+  },
+  "OPEN MODE ↗": {
+    "en": "SELECT STRATEGY ↗",
+    "zh": "选择策略 ↗"
+  },
+  "05 / THE CREW": {
+    "en": "05 / SHIP–SHORE TEAM COLLABORATION",
+    "zh": "05 / 船岸人员协作"
+  },
+  "MEET THE CREW": {
+    "en": "DIFFERENT ROLES.",
+    "zh": "不同岗位，"
+  },
+  "MOVING ": {
+    "en": "ONE ",
+    "zh": "共同"
+  },
+  "YOUR CARGO.": {
+    "en": "YOUR VOYAGE.",
+    "zh": "每次远航，"
+  },
+  "PEOPLE WHO KNOW": {
+    "en": "CONNECTED ROLES",
+    "zh": "船岸业务角色"
+  },
+  "WHERE THINGS GO.": {
+    "en": "SHARED VOYAGE CONTEXT.",
+    "zh": "共享航次信息。"
+  },
+  "LUKAS BRENNER": {
+    "en": "VOYAGE PLANNERS",
+    "zh": "航线规划员"
+  },
+  "OPERATIONS LEAD": {
+    "en": "PASSAGE PLANNING",
+    "zh": "航路计划与油耗预估"
+  },
+  "AMINA OKAFOR": {
+    "en": "METEOROLOGIST",
+    "zh": "气象预报员"
+  },
+  "PORT STRATEGY": {
+    "en": "24-HOUR WEATHER MONITORING",
+    "zh": "24小时气象监控"
+  },
+  "MARTIN KLEIN": {
+    "en": "FLEET OPERATORS",
+    "zh": "岸基调度员"
+  },
+  "FLEET DIRECTOR": {
+    "en": "FLEET COORDINATION",
+    "zh": "全船队动态协作"
+  },
+  "SOFIA LIND": {
+    "en": "RISK ASSESSOR",
+    "zh": "风险评估员"
+  },
+  "CARGO CONTROL": {
+    "en": "WEATHER RISK",
+    "zh": "恶劣海况与绕航建议"
+  },
+  "JONAS BERG": {
+    "en": "COST FORECASTER",
+    "zh": "成本预测员"
+  },
+  "VESSEL OPS": {
+    "en": "CII, CARBON EMISSIONS & COST ANALYSIS REPORTS",
+    "zh": "CII碳排放与成本分析报告"
+  },
+  "Norvik operations team": {
+    "en": "Voyage performance visualization",
+    "zh": "航次性能数据可视化"
+  },
+  "“WE USED TO CHASE FIVE FORWARDERS FOR ONE UPDATE. NOW ONE NORVIK PLANNER AND ONE DASHBOARD COVER EVERY CONTAINER ON THE SHIP.”": {
+    "en": "A SHARED VOYAGE VIEW CONNECTS SHORE-SIDE PLANNING WITH ONBOARD DECISIONS. REVIEW UPDATED WEATHER AND ROUTE RECOMMENDATIONS TOGETHER.",
+    "zh": "将岸基航路计划与驾驶台决策连接起来。共享最新气象与航线建议，让每一次调整都经过船岸共同确认。"
+  },
+  "SAMUEL ADEYEMI / KESTREL FOODS": {
+    "en": "HUMAN REVIEW REMAINS PART OF THE PROCESS",
+    "zh": "人机协作 · 航线调整由人工确认"
+  },
+  "MEET THE TEAM": {
+    "en": "EXPLORE COLLABORATION",
+    "zh": "了解协作方式"
+  },
+  "FEWER CALLS.": {
+    "en": "SHARED WEATHER.",
+    "zh": "共享气象。"
+  },
+  "FEWER DELAYS.": {
+    "en": "CLEARER ROUTES.",
+    "zh": "清晰航路。"
+  },
+  "MORE SHIPPING.": {
+    "en": "INFORMED DECISIONS.",
+    "zh": "协同决策。"
+  },
+  "THE SIMPLEST WAY TO MOVE FORWARD IS TO KNOW WHAT'S NEXT.": {
+    "en": "KEEP THE VESSEL AND SHORE TEAM WORKING FROM THE SAME VOYAGE CONTEXT.",
+    "zh": "让船端与岸基始终基于同一份航次信息作出判断。"
+  },
+  "06 / GET IN TOUCH": {
+    "en": "06 / PARTNERSHIPS & INQUIRIES",
+    "zh": "06 / 合作与咨询"
+  },
+  "ROUTE, CARGO, DEADLINE. TELL US WHAT'S MOVING.": {
+    "en": "VESSEL, TRADING AREA, VOYAGE GOAL. TELL US WHAT YOU NEED.",
+    "zh": "告诉我们你的船型、航区与航次目标。"
+  },
+  "YOUR NAME": {
+    "en": "YOUR NAME",
+    "zh": "联系人"
+  },
+  "WORK EMAIL": {
+    "en": "WORK EMAIL",
+    "zh": "工作邮箱"
+  },
+  "YOUR EMAIL": {
+    "en": "name@company.com",
+    "zh": "name@company.com"
+  },
+  "WHAT'S MOVING?": {
+    "en": "YOUR VOYAGE REQUIREMENTS",
+    "zh": "您的航次需求说明"
+  },
+  "CARGO / ROUTE / DEADLINE": {
+    "en": "VESSEL TYPE / TRADING AREA / TARGET ETA",
+    "zh": "船型 / 航区 / 预计到港时间"
+  },
+  "REQUEST A QUOTE": {
+    "en": "SUBMIT INQUIRY",
+    "zh": "提交咨询请求"
+  },
+  "TELL US WHAT'S": {
+    "en": "PLAN YOUR",
+    "zh": "规划你的"
+  },
+  "MOVING NEXT.": {
+    "en": "NEXT PASSAGE.",
+    "zh": "下一次远航。"
+  },
+  "WE'LL FIND THE CLEAREST WAY TO GET IT THERE.": {
+    "en": "EXPLORE WEATHER-INFORMED ROUTING FOR YOUR FLEET.",
+    "zh": "为你的船队，探索更有依据的气象导航方案。"
+  },
+  "BACK TO TOP": {
+    "en": "BACK TO TOP",
+    "zh": "返回顶部"
+  },
+  "ALWAYS ACCOUNTED FOR.": {
+    "en": "BETTER INFORMED.",
+    "zh": "更有把握。"
+  },
+  "START MOVING": {
+    "en": "START A CONVERSATION",
+    "zh": "沟通航次需求"
+  },
+  "STOCKHOLM / ROTTERDAM / SINGAPORE": {
+    "en": "WEATHER / ROUTING / VESSEL PERFORMANCE",
+    "zh": "气象 / 航线 / 船舶性能"
+  },
+  "HELLO@NORVIK.COM &nbsp; +31 10 555 0142": {
+    "en": "DEMO REQUESTS ARE SAVED IN THIS BROWSER ONLY",
+    "zh": "预览版需求仅保存在当前浏览器"
+  },
+  "© 2026 NORVIK FREIGHT SYSTEMS": {
+    "en": "© 2026 NAVFULL · MARINE WEATHER ROUTING",
+    "zh": "© 2026 Navfull · 船舶气象导航"
+  },
+  "saved": {
+    "en": "Saved in this browser only. Not sent or submitted.",
+    "zh": "已保存在当前浏览器，尚未发送或提交。"
+  },
+  "saveError": {
+    "en": "Unable to save. Please copy and keep your request.",
+    "zh": "当前浏览器无法保存，请复制并保留你的需求。"
+  },
+  "preview": {
+    "en": "Preview only: this form saves locally and does not send a request.",
+    "zh": "预览版：表单仅保存到本机，不会发送或提交。"
+  }
+}

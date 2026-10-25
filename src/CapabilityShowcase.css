@@ -1,0 +1,33 @@
+.nv-capability-visual { background: #07151e; }
+.nv-capability-visual img {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  filter: none;
+  transition: opacity 500ms ease;
+}
+.nv-capability-visual img.is-active { opacity: 1; }
+.nv-capability-visual .nv-photo-stat { z-index: 1; background: #07151edb; align-items: center; }
+.nv-capability-visual small { margin-left: auto; font: 12px/1.6 var(--mono); color: #dce5ee; }
+.nv-capability-controls button {
+  min-width: 0;
+  padding: 10px 0 12px;
+  border: 0;
+  border-top: 2px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 200ms ease, color 200ms ease;
+}
+.nv-capability-controls button[aria-pressed='true'],
+.nv-capability-controls button:hover { border-color: var(--brand-blue); color: var(--brand-blue); }
+.nv-capability-controls button:focus-visible { outline: 2px solid var(--brand-blue); outline-offset: 5px; }
+.nv-capability-controls p { color: #62625e; line-height: 1.6; }
+@media (max-width: 800px) {
+  .nv-capability-visual small { width: 100%; margin-left: 0; }
+  .nv-capability-visual .nv-photo-stat { padding: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nv-capability-visual img { transition: none; }
+}

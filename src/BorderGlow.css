@@ -1,0 +1,65 @@
+.nf-border-glow { --edge-angle: 45deg; --edge-power: 0; }
+.nf-border-glow.nf-principle-card {
+  background: #081321;
+  border: 1px solid rgb(255 255 255 / 15%);
+  box-shadow: 0 8px 24px -12px rgb(0 0 0 / 35%);
+}
+.nf-border-glow.nf-principle-card::before { display: none; }
+.nf-role-list .nf-role-shell,
+.nf-collab-layout .nf-role-panel.nf-border-glow {
+  position: relative;
+  isolation: isolate;
+  min-width: 0;
+  border: 1px solid rgb(255 255 255 / 15%);
+  border-radius: 14px;
+  background: #081321;
+  box-shadow: 0 8px 24px -12px rgb(0 0 0 / 35%);
+}
+.nf-role-list .nf-role-shell > button {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 13px;
+  background: transparent;
+}
+.nf-role-list .nf-role-shell[data-selected=true] {
+  border-color: #3987ff80;
+  background: #0b1c34;
+}
+.nf-role-list .nf-role-shell > button:focus { outline: none; }
+.nf-role-list .nf-role-shell:has(> button:focus-visible) {
+  border-color: #83b9ff;
+  box-shadow: 0 0 0 1px #83b9ff;
+}
+@media (max-width: 480px) {
+  .nf-collab-layout .nf-role-panel.nf-border-glow { padding: 24px 18px; }
+}
+.nf-edge-glow {
+  position: absolute;
+  inset: -24px;
+  pointer-events: none;
+  z-index: 2;
+  border-radius: inherit;
+  opacity: var(--edge-power);
+  transition: opacity .2s ease-out;
+  -webkit-mask-image: conic-gradient(from var(--edge-angle), #000 3%, transparent 22%, transparent 78%, #000 97%);
+  mask-image: conic-gradient(from var(--edge-angle), #000 3%, transparent 22%, transparent 78%, #000 97%);
+}
+.nf-border-glow:not(:hover) > .nf-edge-glow { opacity: 0; transition-duration: .65s; }
+.nf-edge-glow > span {
+  position: absolute;
+  inset: 24px;
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 1px #c2deff, inset 0 0 6px #6daaff80, inset 0 0 18px #0668ff45, 0 2px 8px #3987ff70, 0 4px 22px #0668ff40;
+}
+@media (hover: none), (pointer: coarse) {
+  .nf-edge-glow { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nf-border-glow:hover > .nf-edge-glow {
+    mask-image: none;
+    -webkit-mask-image: none;
+    opacity: .45;
+    transition: none;
+  }
+}

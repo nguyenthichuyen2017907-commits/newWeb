@@ -1,0 +1,56 @@
+.nv-plans { background: #10151f; color: #f5f3ee; }
+.nv-plans-intro { text-align: center; max-width: 980px; margin: 0 auto 64px; }
+.nv-plans .nv-plans-intro h2 { font-size: clamp(32px, 3.7vw, 56px); line-height: 1.25; margin: 0 0 22px; text-wrap: balance; }
+.nv-plans-intro > p { color: #bdc8da; font-size: 16px; line-height: 1.8; margin: 0 auto; max-width: 720px; }
+.nv-plans-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; align-items: stretch; }
+.nv-plan { position: relative; display: flex; flex-direction: column; min-width: 0; padding: 34px 24px 24px; border: 1px solid #344052; border-radius: 16px; background: #151c29; }
+.nv-plan-featured { background: #19263c; border-color: #6897f7; }
+.nv-plan.pixel-card { width: auto; height: auto; display: flex; align-items: stretch; overflow: visible; box-shadow: none; user-select: text; transition: border-color .25s ease, transform .25s ease; }
+.nv-plan.pixel-card::after { display: none; }
+.nv-plan.pixel-card > .pixel-card-canvas { border-radius: inherit; }
+.nv-plan.pixel-card > .nv-plan-badge { position: absolute; z-index: 3; }
+.nv-plan.pixel-card[data-active], .nv-plan.pixel-card:focus-within { border-color: #8db3ff; }
+.nv-plan.pixel-card:active { transform: translateY(-2px) scale(.995); }
+@media (hover: hover) and (pointer: fine) {
+  .nv-plan.pixel-card:hover { transform: translateY(-5px); }
+  .nv-plan.pixel-card:active { transform: translateY(-2px) scale(.995); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nv-plan.pixel-card { transition: none; transform: none; }
+  .nv-plan.pixel-card:hover, .nv-plan.pixel-card:active { transform: none; }
+  .nv-plan .pixel-card-canvas { display: none; }
+}
+.nv-plan-badge { position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%); padding: 7px 16px; border-radius: 20px; background: var(--brand-blue); color: white; font-size: 12px; white-space: nowrap; }
+.nv-plan-code { font-size: 12px; line-height: 1.5; letter-spacing: .06em; color: #aabbd4; }
+.nv-plan-featured .nv-plan-code { color: #8db3ff; }
+.nv-plan h3 { font-size: clamp(22px, 2vw, 28px); line-height: 1.3; margin: 12px 0 14px; }
+.nv-plan-description { min-height: 76px; color: #bdc8da; font-size: 14px; line-height: 1.8; margin: 0 0 24px; }
+.nv-plan-price { display: flex; flex-direction: column; gap: 10px; padding-bottom: 28px; border-bottom: 1px solid #344052; }
+.nv-plan-price strong { font-size: 32px; line-height: 1.3; font-weight: 600; }
+.nv-plan-price span { color: #bdc8da; font-size: 12px; }
+.nv-plan-list-label { color: #aabbd4; font-size: 12px; margin: 24px 0 16px; }
+.nv-plan ul { padding: 0; margin: 28px 0 36px; list-style: none; }
+.nv-plan li { display: flex; align-items: flex-start; gap: 10px; color: #dde5f2; font-size: 14px; line-height: 1.6; }
+.nv-plan li + li { margin-top: 16px; }
+.nv-plan li svg { width: 18px; height: 22px; flex: 0 0 18px; color: #82acff; }
+.nv-plan-action { display: flex; justify-content: center; align-items: center; text-align: center; min-height: 46px; padding: 12px; margin-top: auto; border-radius: 8px; background: #2a3649; color: #fff; font-size: 14px; transition: background .2s; }
+.nv-plan-featured .nv-plan-action { background: var(--brand-blue); }
+.nv-plan-action:hover { background: #3b5273; }
+.nv-plan-featured .nv-plan-action:hover { background: #205dcc; }
+.nv-plan-action:focus-visible { outline: 2px solid #afc8ff; outline-offset: 5px; }
+.nv-plans-note { text-align: center; color: #aebdd2; font-size: 12px; line-height: 1.8; margin: 28px 0 0; }
+@media (max-width: 1100px) and (min-width: 801px) {
+  .nv-header { gap: 12px; grid-template-columns: auto 1fr auto; }
+  .nv-header .nv-header-cta { display: none; }
+}
+@media (max-width: 1100px) {
+  .nv-plans-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 20px; }
+  .nv-plan-description { min-height: 52px; }
+}
+@media (max-width: 600px) {
+  .nv-plans-grid { grid-template-columns: 1fr; gap: 30px; }
+  .nv-plans-intro { margin-bottom: 46px; }
+  .nv-plan-description { min-height: 0; }
+  .nv-plan { padding: 30px 24px 24px; }
+}
+@media (prefers-reduced-motion: reduce) { .nv-plan-action { transition: none; } }

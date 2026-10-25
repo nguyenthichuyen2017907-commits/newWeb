@@ -1,0 +1,48 @@
+/* Five sections; content can grow on small screens or at increased text zoom. */
+html { scroll-padding-top: 0; }
+.ap-hero { display: flex; flex-direction: column; }
+.ap-main.ap-container { flex: 1; display: grid; align-items: center; margin: 0 auto; }
+.ap-hero .ap-copy { padding: 56px 24px 120px; }
+.page-sections > section { min-height: 100svh; padding-block: 112px 48px; display: flex; flex-direction: column; justify-content: center; }
+.ap-links { gap: 10px; }
+.ap-links a { padding: 10px 18px; border-radius: 24px; }
+.module-capabilities { margin-top: 24px; }
+.module-options { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.module-options button { padding: 12px; min-height: 48px; color: #c8bdd5; background: #15101e; border: 1px solid var(--line); border-radius: 8px; cursor: pointer; font: inherit; font-size: 13px; transition: background-color .2s, color .2s; }
+.module-options button.is-active { color: white; background: #5a2190; border-color: #ac70e3; }
+.module-options button:focus-visible { outline: 2px solid #d8afff; outline-offset: 3px; }
+.module-capabilities .capability-description { margin: 16px 0 0; min-height: 48px; line-height: 1.7; font-size: 14px; }
+@media (hover: hover) { .module-options button:hover { color: #fff; background: #42235e; } }
+@media (min-width: 1025px) {
+  .section-title { max-width: none; }
+  .section-title > .kicker { display: none; }
+  .section-title h2 { font-size: clamp(32px, 3.2vw, 48px); margin: 0 0 16px; }
+  .section-title h2 br { display: none; }
+  .section-lead { max-width: 760px; margin: 0; }
+  .feature-grid { grid-template-columns: repeat(3, minmax(0,1fr)); grid-template-rows: 260px; margin-top: 28px; }
+  .feature-card:first-child { grid-row: auto; }
+  .role-grid { grid-template-columns: repeat(5, minmax(0,1fr)); margin-top: 36px; }
+  .role-card, .role-card:nth-child(4), .role-card:nth-child(5) { grid-column: auto; min-height: 300px; padding: 20px 16px; }
+  .role-card h3 { font-size: 20px; }
+  .role-card p { line-height: 1.5; min-height: 30px; }
+  .price-grid { margin-top: 32px; }
+  .price-card { min-height: 400px; padding: 24px 18px 18px; }
+  .price-card h3 { font-size: 21px; min-height: 26px; margin: 12px 0 18px; }
+  .price-card ul { margin: 16px 0 24px; }
+  .contact-content { max-width: none; display: grid; grid-template-columns: 1fr 1fr; column-gap: 64px; align-items: start; }
+  .contact-content > .kicker { display: none; }
+  .contact-content h2 { grid-column: 1; font-size: clamp(32px, 3.7vw, 54px); margin: 0 0 24px; align-self: end; }
+  .contact-content > p:not(.kicker) { grid-column: 1; margin: 0; }
+  .contact-content .inquiry-form { grid-column: 2; grid-row: 1 / span 2; margin: 0; }
+  .contact-footer { margin-top: 48px; }
+}
+@media (max-width: 1024px) {
+  .module-options { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .page-sections > section { padding-top: 104px; }
+}
+@media (max-width: 680px) {
+  .ap-hero .ap-copy { padding: 48px 20px 88px; }
+  .module-options { grid-template-columns: 1fr; }
+  .page-sections > section { padding-bottom: 64px; }
+}
+@media (prefers-reduced-motion: reduce) { .module-options button { transition: none; } }

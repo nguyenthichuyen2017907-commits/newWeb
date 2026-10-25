@@ -1,0 +1,78 @@
+:root {
+  --brand: #9312ff;
+  --brand-light: #c394ff;
+  --brand-hover: #7510ca;
+  --cyan: var(--brand-light);
+  --bg: #0b0811;
+  --line: rgba(211, 186, 244, .18);
+}
+::selection { background: #c394ff; color: #170b26; }
+body { color: #f5f1fa; }
+.below-hero { position: relative; isolation: isolate; background: #090612; }
+/* One viewport-sized canvas stays behind all lower sections. */
+.page-grainient {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100svh;
+  margin-bottom: -100vh;
+  margin-bottom: -100svh;
+  pointer-events: none;
+  background: linear-gradient(42deg, #280563, #000 50%, #052964);
+}
+.page-grainient::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 3, 12, .18);
+}
+.page-sections { position: relative; display: flow-root; }
+.below-hero .contact { background: transparent; }
+.below-hero .contact-bg { display: none; }
+.brand-dot, .role-index, .cap-number { color: var(--brand-light); }
+.capability-preview, .feature-card, .role-card, .price-card { background: #14101d; border-color: var(--line); }
+.section-lead, .feature-copy p, .role-card small, .price-desc, .price-card ul, .capability-description { color: #b8afc5; }
+.capability-item small, .preview-top, .preview-bottom { color: #a298b0; }
+.contact { background: var(--bg); }
+.contact-bg { background: linear-gradient(90deg, #0b0811 16%, rgba(11,8,17,.86) 48%, rgba(11,8,17,.5)), url('/hero-ocean.png') center / cover; }
+.contact::before { border-color: rgba(195,148,255,.18); box-shadow: 0 0 0 70px rgba(147,18,255,.025), 0 0 0 140px rgba(147,18,255,.025); }
+.contact-content > p:not(.kicker), .demo-note, .form-note, .form-status { color: #b8afc5; }
+.inquiry-form input, .inquiry-form textarea { background: #171020; border-color: #554363; color: #f5f1fa; }
+.inquiry-form input::placeholder, .inquiry-form textarea::placeholder { color: #aaa0b7; }
+.inquiry-form input:focus, .inquiry-form textarea:focus { border-color: var(--brand-light); }
+.role-graphic { border-color: rgba(195,148,255,.2); }
+.role-orbit { border-color: rgba(195,148,255,.3); }
+.price-card.featured { background: #251336; border-color: #9655ce; color: #fff; }
+.price-card.featured .kicker, .featured .price small, .featured .price-desc, .featured ul { color: #d5bce9; }
+.price-card .kicker { color: #b7a4cb; }
+.price-card li span, .featured li span { color: var(--brand-light); }
+.price-badge { background: #9312ff; color: #fff; }
+.price-link { padding: 10px 14px; border: 1px solid #604276; border-radius: 10px; }
+.price-link-light { background: #9312ff; color: #fff; border-color: #a144ea; }
+.button-primary, .ap-light { background: #9312ff; background-image: linear-gradient(110deg, #a020ff, #7a1cf8); color: #fff; }
+.button, .ap-light, .ap-outline, .price-link, .text-link, .capability-item, .ap-toggle, .ap-links a, .ap-menu-panel a, .royal-product-link {
+  transition: background-color .22s, color .22s, border-color .22s, box-shadow .22s;
+}
+.button-primary:focus-visible, .ap-light:focus-visible, .price-link-light:focus-visible { outline-color: #e4c9ff; }
+@media (hover: hover) {
+  .button-primary:hover, .ap-light:hover, .price-link-light:hover {
+    background: #c394ff;
+    color: #1b092b;
+    border-color: #d9b8ff;
+    filter: none;
+    box-shadow: 0 6px 24px rgba(147,18,255,.24);
+  }
+  .ap-outline:hover, .price-link:not(.price-link-light):hover {
+    background: #7510ca;
+    color: #fff;
+    border-color: #b36fea;
+  }
+  .capability-item:hover { background: #251333; }
+  .text-link:hover, .ap-links a:hover { color: #e4c9ff; }
+  .ap-toggle:hover, .ap-menu-panel a:not(.ap-light):hover { background: #382047; color: #fff; }
+  .royal-product-link:hover .royal-product-zoom { background: #7510ca; color: #fff; }
+}
+.button-primary:active, .ap-light:active, .ap-outline:active, .price-link:active { background: #5a0b9e; color: #fff; }
+@media (prefers-reduced-motion: reduce) {
+  .button, .ap-light, .ap-outline, .price-link, .text-link, .capability-item, .ap-toggle, .ap-links a, .ap-menu-panel a { transition: none; }
+}

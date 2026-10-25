@@ -1,0 +1,29 @@
+.nv-crew-grid article {
+  min-width: 0;
+  cursor: pointer;
+}
+.nv-crew-grid article img,
+.nv-crew-grid article.lead img {
+  filter: grayscale(1) contrast(1.15);
+  transition: filter 550ms ease;
+}
+.nv-crew-grid article.is-active img {
+  filter: grayscale(0) contrast(1.1);
+}
+.nv-crew-grid article:focus-visible {
+  outline: 2px solid var(--brand-blue);
+  outline-offset: 3px;
+}
+@media (min-width: 801px) {
+  .nv-crew-grid {
+    grid-template-columns: var(--crew-columns, 1.8fr 1fr 1fr 1fr 1fr);
+    transition: grid-template-columns 650ms cubic-bezier(.22, 1, .36, 1);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nv-crew-grid,
+  .nv-crew-grid article img,
+  .nv-crew-grid article.lead img {
+    transition: none;
+  }
+}

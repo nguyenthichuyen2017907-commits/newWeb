@@ -1,0 +1,7 @@
+.nv-capability-region { position: relative; overflow: hidden; background: var(--paper); }
+.nv-capability-region .nv-booking, .nv-capability-region .nv-rules { position: relative; background: transparent; }
+.nv-capability-region .nv-booking > :not(.nv-threads-backdrop), .nv-capability-region .nv-rules > * { position: relative; z-index: 1; }
+.nv-booking > .nv-threads-backdrop { position: absolute; z-index: 0; left: 0; right: 0; bottom: -220px; height: 600px; pointer-events: none; }
+@media (max-width: 800px) {
+  .nv-booking > .nv-threads-backdrop { bottom: -150px; height: 400px; opacity: .75; }
+}

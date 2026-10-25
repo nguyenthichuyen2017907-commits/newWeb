@@ -138,3 +138,6 @@
 .nv-booking .nv-crane-image img {
   filter: saturate(.72) contrast(.9);
 }
+.nv-mode-tabs .nv-mode-tags { display: flex; flex-wrap: wrap; gap: 8px; padding-top: 20px; }
+.nv-mode-tabs .nv-mode-tags span { margin: 0; padding: 5px 10px; border-radius: 6px; background: rgb(255 255 255 / 8%); color: #e9edf5; font-size: 12px; line-height: 1.4; }
+.nv-mode-tabs button.active .nv-mode-tags span { background: rgb(255 255 255 / 16%); color: #fff; }

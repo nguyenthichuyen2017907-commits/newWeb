@@ -10,6 +10,7 @@ import './CrewAccordion.css'
 import CapabilityShowcase from './CapabilityShowcase.jsx'
 import GooeyNav from './GooeyNav.jsx'
 import SubscriptionPlans from './SubscriptionPlans.jsx'
+import './MobileCardNav.css'
 
 const getCrew = t => [
   [t("LUKAS BRENNER"), t("OPERATIONS LEAD"), assetUrl('/optimized/ocean-voyage-concept.jpg')],
@@ -30,7 +31,32 @@ function Logo() { return <img src={assetUrl('/navfull-logo.png')} alt="Navfull" 
 function Header() {
   const { t, language } = useLocale()
   const [open, setOpen] = useState(false)
+  const headerRef = useRef(null)
+  const menuRef = useRef(null)
   const targets = ['#top', '#cargo', '#crew', '#plans', '#contact']
+  const labels = [t('ABOUT US'), t('OUR CARGO'), t('THE CREW'), language === 'zh' ? '订阅方案' : 'Plans', t('CONTACT')]
+  const descriptions = language === 'zh'
+    ? ['每次远航，更有把握。', '气象、航线与风险决策', '船岸协同，共享航次信息', '找到适合你的服务方案', '一起规划下一次远航']
+    : ['Navigate with confidence.', 'Weather, routes and risk', 'Connect ship and shore', 'Find the right service plan', 'Plan your next voyage together']
+  useEffect(() => {
+    if (!open) return
+    const dismiss = event => {
+      if (!headerRef.current?.contains(event.target)) setOpen(false)
+    }
+    const escape = event => {
+      if (event.key === 'Escape') { setOpen(false); menuRef.current?.focus() }
+    }
+    const desktop = window.matchMedia('(min-width: 801px)')
+    const resize = () => { if (desktop.matches) setOpen(false) }
+    document.addEventListener('pointerdown', dismiss)
+    document.addEventListener('keydown', escape)
+    desktop.addEventListener('change', resize)
+    return () => {
+      document.removeEventListener('pointerdown', dismiss)
+      document.removeEventListener('keydown', escape)
+      desktop.removeEventListener('change', resize)
+    }
+  }, [open])
   const [activeNav, setActiveNav] = useState(() => Math.max(0, targets.indexOf(window.location.hash)))
   useEffect(() => {
     const sections = [
@@ -71,7 +97,7 @@ function Header() {
       window.removeEventListener('hashchange', schedule)
     }
   }, [])
-  return <header className={`nv-header is-floating ${open ? 'is-open' : ''}`}>
+  return <header ref={headerRef} className={`nv-header is-floating ${open ? 'is-open' : ''}`}>
     <a className="nv-logo" href="#top"><Logo/></a>
     <GooeyNav className="nv-nav" ariaLabel={t("Main navigation")}
       items={[t('ABOUT US'), t('OUR CARGO'), t('THE CREW'), language === 'zh' ? '订阅方案' : 'Plans', t('CONTACT')].map((label, i) => ({ label, href: targets[i] }))}
@@ -79,7 +105,16 @@ function Header() {
       frame={false} color="#2B6DE5" activeTextColor="#ffffff"
       particleCount={8} spread={18} animationTime={650} timeVariance={100} gooeyness={0.4} wobble={0} />
     <LanguageSwitch/><a className="nv-header-cta" href="#contact">{t("GET A FREIGHT QUOTE")}</a>
-    <button className="nv-menu" aria-label={t("Toggle menu")} aria-expanded={open} onClick={() => setOpen(!open)}><span/><span/></button>
+    <button ref={menuRef} type="button" className="nv-menu" aria-label={t("Toggle menu")} aria-expanded={open} aria-controls="mobile-card-nav" onClick={() => setOpen(!open)}><span/><span/><span/></button>
+    <div className="nv-mobile-panel" id="mobile-card-nav" inert={!open} aria-hidden={!open}>
+      <nav className="nv-mobile-cards" aria-label={language === 'zh' ? '移动端导航' : 'Mobile navigation'}>
+        {labels.map((label, index) => <a key={targets[index]} href={targets[index]}
+          className="nv-mobile-card" aria-current={activeNav === index ? 'location' : undefined}
+          style={{ '--card-order': index }} onClick={() => { setActiveNav(index); setOpen(false); menuRef.current?.focus() }}>
+          <strong>{label}</strong><span>{descriptions[index]}</span>
+        </a>)}
+      </nav>
+    </div>
   </header>
 }
 
